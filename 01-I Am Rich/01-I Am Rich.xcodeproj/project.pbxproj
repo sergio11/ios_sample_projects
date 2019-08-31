@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3DF676EB231A75EB00987C93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF676EA231A75EB00987C93 /* AppDelegate.swift */; };
-		3DF676ED231A75EB00987C93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF676EC231A75EB00987C93 /* ViewController.swift */; };
 		3DF676F0231A75EB00987C93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF676EE231A75EB00987C93 /* Main.storyboard */; };
 		3DF676F2231A75EC00987C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF676F1231A75EC00987C93 /* Assets.xcassets */; };
 		3DF676F5231A75EC00987C93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF676F3231A75EC00987C93 /* LaunchScreen.storyboard */; };
 		3DF67700231A75EC00987C93 /* _1_I_Am_RichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF676FF231A75EC00987C93 /* _1_I_Am_RichTests.swift */; };
 		3DF6770B231A75EC00987C93 /* _1_I_Am_RichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6770A231A75EC00987C93 /* _1_I_Am_RichUITests.swift */; };
+		3DF6771D231A988100987C93 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6771C231A988100987C93 /* IntroViewController.swift */; };
+		3DF6771F231A98A400987C93 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6771E231A98A400987C93 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		3DF676E7231A75EB00987C93 /* 01-I Am Rich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-I Am Rich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF676EA231A75EB00987C93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DF676EC231A75EB00987C93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DF676EF231A75EB00987C93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DF676F1231A75EC00987C93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DF676F4231A75EC00987C93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		3DF67706231A75EC00987C93 /* 01-I Am RichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-I Am RichUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF6770A231A75EC00987C93 /* _1_I_Am_RichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1_I_Am_RichUITests.swift; sourceTree = "<group>"; };
 		3DF6770C231A75EC00987C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF6771C231A988100987C93 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		3DF6771E231A98A400987C93 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				3DF676EA231A75EB00987C93 /* AppDelegate.swift */,
-				3DF676EC231A75EB00987C93 /* ViewController.swift */,
 				3DF676EE231A75EB00987C93 /* Main.storyboard */,
 				3DF676F1231A75EC00987C93 /* Assets.xcassets */,
 				3DF676F3231A75EC00987C93 /* LaunchScreen.storyboard */,
 				3DF676F6231A75EC00987C93 /* Info.plist */,
+				3DF6771C231A988100987C93 /* IntroViewController.swift */,
+				3DF6771E231A98A400987C93 /* GameViewController.swift */,
 			);
 			path = "01-I Am Rich";
 			sourceTree = "<group>";
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DF676ED231A75EB00987C93 /* ViewController.swift in Sources */,
 				3DF676EB231A75EB00987C93 /* AppDelegate.swift in Sources */,
+				3DF6771F231A98A400987C93 /* GameViewController.swift in Sources */,
+				3DF6771D231A988100987C93 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

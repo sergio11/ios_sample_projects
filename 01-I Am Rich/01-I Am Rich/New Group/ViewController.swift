@@ -36,11 +36,5 @@ class ViewController: UIViewController {
         
     }
     
-
-    @IBAction func onStartClicked(_ sender: UIButton) {
-        
-        print("Start Button Clicked")
-        
-    }
 }
 
