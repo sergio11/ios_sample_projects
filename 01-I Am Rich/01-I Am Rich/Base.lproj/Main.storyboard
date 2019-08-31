@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_I_Am_Rich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_main_logo" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-op-7gh">
+                                <rect key="frame" x="106.5" y="347.5" width="201" height="201"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebo-gp-HDy">
+                                <rect key="frame" x="119.5" y="598.5" width="175" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Iniciar Juego">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onStartClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="CsH-d8-IAV"/>
+                                </connections>
+                            </button>
+                            <textView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="I am Rich" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkG-BA-QWS">
+                                <rect key="frame" x="80" y="201.5" width="254" height="86"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="W96-5d-FsO"/>
+                                    <constraint firstAttribute="height" constant="86" id="aJu-17-pCO"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="56"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="dreamsoftware" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hr1-33-FFS">
+                                <rect key="frame" x="247" y="832" width="147" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="LyS-bN-pS4"/>
+                                    <constraint firstAttribute="height" constant="30" id="X9p-4K-eng"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3318693329015544" green="0.0" blue="0.08437843445529683" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="VgU-op-7gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JLp-hs-as8"/>
+                            <constraint firstItem="VgU-op-7gh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JX4-rt-RQ8"/>
+                            <constraint firstItem="ebo-gp-HDy" firstAttribute="top" secondItem="VgU-op-7gh" secondAttribute="bottom" constant="50" id="YiR-pU-B0U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hr1-33-FFS" secondAttribute="trailing" constant="20" id="f0d-17-1Zm"/>
+                            <constraint firstItem="VgU-op-7gh" firstAttribute="top" secondItem="zkG-BA-QWS" secondAttribute="bottom" constant="60" id="iMw-sO-LBx"/>
+                            <constraint firstItem="zkG-BA-QWS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mgA-Bw-3bF"/>
+                            <constraint firstItem="Hr1-33-FFS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nwA-YR-MHj"/>
+                            <constraint firstItem="ebo-gp-HDy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sSs-xp-RpX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_main_logo" width="201" height="201"/>
+    </resources>
+</document>
