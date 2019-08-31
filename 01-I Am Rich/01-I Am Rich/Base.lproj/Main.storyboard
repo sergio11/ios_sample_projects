@@ -43,30 +43,42 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="dreamsoftware" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hr1-33-FFS">
-                                <rect key="frame" x="247" y="832" width="147" height="30"/>
+                                <rect key="frame" x="20" y="832" width="147" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="147" id="LyS-bN-pS4"/>
-                                    <constraint firstAttribute="height" constant="30" id="X9p-4K-eng"/>
+                                    <constraint firstAttribute="height" constant="30" id="AzG-3p-pZY"/>
+                                    <constraint firstAttribute="width" constant="147" id="TX8-rM-16l"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info_circle_solid" translatesAutoresizingMaskIntoConstraints="NO" id="OsW-dn-Xmv">
+                                <rect key="frame" x="334" y="802" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EJF-Hf-nyt"/>
+                                    <constraint firstAttribute="width" constant="60" id="Pdq-Y6-axd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.3318693329015544" green="0.0" blue="0.08437843445529683" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OsW-dn-Xmv" secondAttribute="bottom" id="35x-VQ-aUX"/>
+                            <constraint firstItem="Hr1-33-FFS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CmR-Kg-4G8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OsW-dn-Xmv" secondAttribute="trailing" constant="20" id="Fz2-fE-ts3"/>
                             <constraint firstItem="VgU-op-7gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JLp-hs-as8"/>
                             <constraint firstItem="VgU-op-7gh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JX4-rt-RQ8"/>
                             <constraint firstItem="ebo-gp-HDy" firstAttribute="top" secondItem="VgU-op-7gh" secondAttribute="bottom" constant="50" id="YiR-pU-B0U"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hr1-33-FFS" secondAttribute="trailing" constant="20" id="f0d-17-1Zm"/>
+                            <constraint firstItem="Hr1-33-FFS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aPR-lo-Yra"/>
                             <constraint firstItem="VgU-op-7gh" firstAttribute="top" secondItem="zkG-BA-QWS" secondAttribute="bottom" constant="60" id="iMw-sO-LBx"/>
                             <constraint firstItem="zkG-BA-QWS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mgA-Bw-3bF"/>
-                            <constraint firstItem="Hr1-33-FFS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nwA-YR-MHj"/>
                             <constraint firstItem="ebo-gp-HDy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sSs-xp-RpX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="infoImage" destination="OsW-dn-Xmv" id="2xX-OI-G2Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,5 +87,6 @@
     </scenes>
     <resources>
         <image name="app_main_logo" width="201" height="201"/>
+        <image name="info_circle_solid" width="100.5" height="100.5"/>
     </resources>
 </document>
