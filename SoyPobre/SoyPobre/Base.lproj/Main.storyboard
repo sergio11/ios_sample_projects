@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoyPobre" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_background" translatesAutoresizingMaskIntoConstraints="NO" id="l9j-MY-sUx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_money" translatesAutoresizingMaskIntoConstraints="NO" id="W4k-Tt-QtR">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="VGO-ia-Nsv"/>
+                                    <constraint firstAttribute="width" constant="240" id="boA-nk-TWH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soy Pobre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72t-S8-ImA" customClass="UIPaddingLabel" customModule="SoyPobre" customModuleProvider="target">
+                                <rect key="frame" x="121.5" y="183" width="171.5" height="60"/>
+                                <color key="backgroundColor" red="0.93688350915908813" green="0.92178994417190552" blue="0.90980225801467896" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CL7-4u-QAz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.95649701356887817" green="0.80403745174407959" blue="0.54111772775650024" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lP-mP-3lf">
+                                <rect key="frame" x="110" y="687" width="194" height="48"/>
+                                <color key="backgroundColor" red="0.93688350919999996" green="0.92178994420000004" blue="0.90980225800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="¡Soy Rico!">
+                                    <color key="titleColor" red="0.95649701359999995" green="0.80403745169999996" blue="0.5411177278" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onStatusChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9yj-Qy-VwO"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info_circle_solid" translatesAutoresizingMaskIntoConstraints="NO" id="4KI-N9-oNq">
+                                <rect key="frame" x="330" y="781" width="64" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="Uxa-OC-Kzi"/>
+                                    <constraint firstAttribute="width" constant="64" id="bb9-r8-vv5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="l9j-MY-sUx" secondAttribute="bottom" id="8ZP-4d-2zA"/>
+                            <constraint firstItem="l9j-MY-sUx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8z5-T7-tBl"/>
+                            <constraint firstItem="6lP-mP-3lf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="AWJ-pp-Bgk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4KI-N9-oNq" secondAttribute="trailing" constant="20" id="CZv-9J-kIF"/>
+                            <constraint firstItem="4KI-N9-oNq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="330" id="Ph4-5B-faR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6lP-mP-3lf" secondAttribute="bottom" constant="127" id="W6a-PY-j9b"/>
+                            <constraint firstItem="l9j-MY-sUx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="W77-D9-F05"/>
+                            <constraint firstItem="l9j-MY-sUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YFK-Ub-Ub1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6lP-mP-3lf" secondAttribute="trailing" constant="110" id="Zfh-Uj-yxK"/>
+                            <constraint firstItem="4KI-N9-oNq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bcy-N8-6J8"/>
+                            <constraint firstItem="6lP-mP-3lf" firstAttribute="top" secondItem="W4k-Tt-QtR" secondAttribute="bottom" constant="119" id="gbQ-xg-RLj"/>
+                            <constraint firstItem="W4k-Tt-QtR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nyO-rV-WIC"/>
+                            <constraint firstItem="4KI-N9-oNq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="737" id="oes-ga-ivK"/>
+                            <constraint firstItem="W4k-Tt-QtR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="udB-lS-y0M"/>
+                            <constraint firstItem="W4k-Tt-QtR" firstAttribute="top" secondItem="72t-S8-ImA" secondAttribute="bottom" constant="85" id="x8A-XR-PMy"/>
+                            <constraint firstItem="72t-S8-ImA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zqR-KK-C7c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonView" destination="6lP-mP-3lf" id="ckj-vO-gI8"/>
+                        <outlet property="imageView" destination="W4k-Tt-QtR" id="cCK-N2-Cfx"/>
+                        <outlet property="onInfoClicked" destination="4KI-N9-oNq" id="4iQ-We-bFC"/>
+                        <outlet property="titleLabel" destination="72t-S8-ImA" id="Lmi-oB-G4j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_background" width="178" height="178"/>
+        <image name="info_circle_solid" width="100.5" height="100.5"/>
+        <image name="no_money" width="205" height="205"/>
+    </resources>
+</document>
