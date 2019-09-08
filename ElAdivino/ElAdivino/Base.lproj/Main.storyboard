@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ElAdivino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_background" translatesAutoresizingMaskIntoConstraints="NO" id="7nu-Wl-q11">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gam-UD-Umf">
+                                <rect key="frame" x="10" y="664" width="394" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me has preguntado: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfw-R0-2Mv">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="25"/>
+                                        <color key="textColor" red="0.61607211829999997" green="0.32793486119999998" blue="0.64316481349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Voy a ser rico?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLL-X5-l4B">
+                                        <rect key="frame" x="0.0" y="44.5" width="394" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="0.61607211829999997" green="0.32793486119999998" blue="0.64316481349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregunta lo que quieras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWI-3n-9iu">
+                                <rect key="frame" x="10" y="186" width="394" height="62"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="53"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El Adivino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9z-Os-76A">
+                                <rect key="frame" x="110.5" y="94" width="193" height="70"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wizard_cristal_ball" translatesAutoresizingMaskIntoConstraints="NO" id="Cyo-ao-Oy4">
+                                <rect key="frame" x="20" y="263" width="374" height="391"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="n6j-ao-d42"/>
+                                    <constraint firstAttribute="height" constant="391" id="rwe-nW-gEr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT7-AF-0oF">
+                                <rect key="frame" x="100" y="809" width="214" height="53"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="35"/>
+                                <state key="normal" title="Preguntar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAskQuestionClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfH-Pp-JRL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espera ... lo estoy viendo ...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2W-bX-hne">
+                                <rect key="frame" x="0.0" y="771.5" width="414" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.61607211828231812" green="0.3279348611831665" blue="0.64316481351852417" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gam-UD-Umf" firstAttribute="top" secondItem="Cyo-ao-Oy4" secondAttribute="bottom" constant="10" id="4ff-O8-uOY"/>
+                            <constraint firstItem="gam-UD-Umf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="6wD-hu-yQX"/>
+                            <constraint firstItem="gT7-AF-0oF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7ki-Cs-1Oa"/>
+                            <constraint firstItem="Cyo-ao-Oy4" firstAttribute="top" secondItem="uWI-3n-9iu" secondAttribute="bottom" constant="15" id="FPC-sU-w9a"/>
+                            <constraint firstItem="gT7-AF-0oF" firstAttribute="top" secondItem="Z2W-bX-hne" secondAttribute="bottom" constant="10" id="GLM-ZA-y3h"/>
+                            <constraint firstItem="Cyo-ao-Oy4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GaC-00-ag5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gT7-AF-0oF" secondAttribute="trailing" constant="100" id="HZj-KI-WAV"/>
+                            <constraint firstItem="uWI-3n-9iu" firstAttribute="top" secondItem="q9z-Os-76A" secondAttribute="bottom" constant="22" id="HsB-Ig-FTa"/>
+                            <constraint firstItem="7nu-Wl-q11" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jzb-1Y-BgM"/>
+                            <constraint firstItem="7nu-Wl-q11" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M0h-LC-f6V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uWI-3n-9iu" secondAttribute="trailing" constant="10" id="QAz-xL-u2J"/>
+                            <constraint firstItem="q9z-Os-76A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Tsq-Xo-WSI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gam-UD-Umf" secondAttribute="trailing" constant="10" id="UN8-3X-Lf3"/>
+                            <constraint firstItem="gT7-AF-0oF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Zmy-81-91e"/>
+                            <constraint firstItem="uWI-3n-9iu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="csm-hU-A0B"/>
+                            <constraint firstAttribute="bottom" secondItem="7nu-Wl-q11" secondAttribute="bottom" id="eZN-Ax-TPz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z2W-bX-hne" secondAttribute="trailing" id="iJw-9e-GE8"/>
+                            <constraint firstItem="7nu-Wl-q11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nME-Dx-vCe"/>
+                            <constraint firstItem="Z2W-bX-hne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sYl-j0-3Df"/>
+                            <constraint firstItem="q9z-Os-76A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xsJ-Hl-HD8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="Z2W-bX-hne" id="UdI-ZN-32x"/>
+                        <outlet property="imageViewWizard" destination="Cyo-ao-Oy4" id="7RD-Kq-Idv"/>
+                        <outlet property="makeAQuestionButton" destination="gT7-AF-0oF" id="ZLo-bG-WnR"/>
+                        <outlet property="userQuestionLabel" destination="fLL-X5-l4B" id="JgC-UI-NPt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_background" width="201" height="201"/>
+        <image name="wizard_cristal_ball" width="160.5" height="144.5"/>
+    </resources>
+</document>

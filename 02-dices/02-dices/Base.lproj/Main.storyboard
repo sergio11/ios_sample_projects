@@ -31,18 +31,18 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Vpt-PW-rKw">
-                                <rect key="frame" x="85" y="394.5" width="244" height="107"/>
+                                <rect key="frame" x="176" y="440" width="62" height="16"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="Thy-lL-K28">
-                                        <rect key="frame" x="0.0" y="0.0" width="107.00000000000003" height="107.00000000000003"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="iLh-k2-aoS">
-                                        <rect key="frame" x="137" y="0.0" width="107.00000000000003" height="107.00000000000003"/>
+                                        <rect key="frame" x="46" y="0.0" width="16" height="16"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDw-OY-C3n">
-                                <rect key="frame" x="93.5" y="581.5" width="227" height="53"/>
+                                <rect key="frame" x="93.5" y="536" width="227" height="53"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
                                 <state key="normal" title="Tirar los dados">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
