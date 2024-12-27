@@ -11,13 +11,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HeaderView()
-            
             Spacer()
-            
             CardView(honeymoon: honeymoonData[2])
                 .padding()
-            
             Spacer()
+            FooterView()
         }
         
     }
