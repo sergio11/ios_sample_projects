@@ -12,6 +12,7 @@
 		3D216EEA2D1EC84B00F8B012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D216EE92D1EC84B00F8B012 /* Assets.xcassets */; };
 		3D216EED2D1EC84B00F8B012 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D216EEC2D1EC84B00F8B012 /* Preview Assets.xcassets */; };
 		3D216EF42D1ECAB400F8B012 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 3D216EF32D1ECAB400F8B012 /* Sounds */; };
+		3D216EF82D1ED37700F8B012 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D216EF72D1ED37700F8B012 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		3D216EE92D1EC84B00F8B012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D216EEC2D1EC84B00F8B012 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D216EF32D1ECAB400F8B012 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		3D216EF72D1ED37700F8B012 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		3D216ED92D1EC84800F8B012 = {
 			isa = PBXGroup;
 			children = (
+				3D216EF72D1ED37700F8B012 /* Launch Screen.storyboard */,
 				3D216EE42D1EC84900F8B012 /* Honeymoon */,
 				3D216EE32D1EC84900F8B012 /* Products */,
 			);
@@ -130,6 +133,7 @@
 			files = (
 				3D216EF42D1ECAB400F8B012 /* Sounds in Resources */,
 				3D216EED2D1EC84B00F8B012 /* Preview Assets.xcassets in Resources */,
+				3D216EF82D1ED37700F8B012 /* Launch Screen.storyboard in Resources */,
 				3D216EEA2D1EC84B00F8B012 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +272,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Honeymoon/Preview Content\"";
@@ -277,6 +282,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Honeymoon/Preview Content\"";
@@ -305,6 +312,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
