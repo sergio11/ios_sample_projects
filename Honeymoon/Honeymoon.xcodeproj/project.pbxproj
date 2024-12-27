@@ -16,6 +16,7 @@
 		3D216EFD2D1ED69000F8B012 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D216EFC2D1ED69000F8B012 /* HoneymoonModel.swift */; };
 		3D216EFF2D1ED6CC00F8B012 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D216EFE2D1ED6CC00F8B012 /* HoneymoonData.swift */; };
 		3D216F032D1ED74B00F8B012 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D216F022D1ED74B00F8B012 /* CardView.swift */; };
+		3D216F052D1ED96200F8B012 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D216F042D1ED96200F8B012 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3D216EFC2D1ED69000F8B012 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
 		3D216EFE2D1ED6CC00F8B012 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 		3D216F022D1ED74B00F8B012 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3D216F042D1ED96200F8B012 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				3D216EE72D1EC84900F8B012 /* ContentView.swift */,
 				3D216F022D1ED74B00F8B012 /* CardView.swift */,
+				3D216F042D1ED96200F8B012 /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D216EFF2D1ED6CC00F8B012 /* HoneymoonData.swift in Sources */,
+				3D216F052D1ED96200F8B012 /* HeaderView.swift in Sources */,
 				3D216EFD2D1ED69000F8B012 /* HoneymoonModel.swift in Sources */,
 				3D216EE82D1EC84900F8B012 /* ContentView.swift in Sources */,
 				3D216EE62D1EC84900F8B012 /* HoneymoonApp.swift in Sources */,
