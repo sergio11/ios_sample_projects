@@ -28,6 +28,7 @@
 		3D980CCD2D2165D6000B7336 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D980CCC2D2165D6000B7336 /* PlaySound.swift */; };
 		3D980CD02D216836000B7336 /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D980CCE2D216836000B7336 /* sound-click.mp3 */; };
 		3D980CD12D216836000B7336 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D980CCF2D216836000B7336 /* sound-rise.mp3 */; };
+		3D980CD52D216A32000B7336 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D980CD42D216A32000B7336 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		3D980CCC2D2165D6000B7336 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		3D980CCE2D216836000B7336 /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
 		3D980CCF2D216836000B7336 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		3D980CD42D216A32000B7336 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		3D216EE42D1EC84900F8B012 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				3D980CD32D216A26000B7336 /* ViewModel */,
 				3D980CCB2D2165C3000B7336 /* Helper */,
 				3D980CC82D2163DF000B7336 /* Extension */,
 				3D980CC32D215194000B7336 /* Modifier */,
@@ -182,6 +185,14 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		3D980CD32D216A26000B7336 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D980CD42D216A32000B7336 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,6 +269,7 @@
 				3D216EFF2D1ED6CC00F8B012 /* HoneymoonData.swift in Sources */,
 				3D980CC02D2150F1000B7336 /* InfoView.swift in Sources */,
 				3D216F072D1EDB6D00F8B012 /* FooterView.swift in Sources */,
+				3D980CD52D216A32000B7336 /* ContentViewModel.swift in Sources */,
 				3D980CC22D21516D000B7336 /* TitleModifier.swift in Sources */,
 				3D980CCA2D2163F3000B7336 /* CardTransition.swift in Sources */,
 				3D980CC72D21609D000B7336 /* SymbolModifier.swift in Sources */,

@@ -9,39 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     // MARK: - PROPERTIES
-    
-    @State var showAlert: Bool = false
-    @State var showGuide: Bool = false
-    @State var showInfo: Bool = false
     @GestureState private var dragState = DragState.inactive
-    private var dragAreaThreshold: CGFloat = 65.0
-    @State private var lastCardIndex: Int = 1
-    @State private var cardRemovalTransition = AnyTransition.trailingBottom
-    
-    // MARK: - CARD VIEWS
-    @State var cardViews: [CardView]  = {
-        var views = [CardView]()
-        for index in 0..<2 {
-            views.append(CardView(honeymoon: honeymoonData[index]))
-        }
-        return views
-    }()
-    
-    //MARK: MOVE THE CARD
-    private func moveCards() {
-        cardViews.removeFirst()
-        self.lastCardIndex += 1
-        let honeymoon = honeymoonData[lastCardIndex % honeymoonData.count]
-        let newCardView = CardView(honeymoon: honeymoon)
-        cardViews.append(newCardView)
-    }
-    
-    private func isTopCard(cardView: CardView) -> Bool {
-        guard let index = cardViews.firstIndex(where: { $0.id == cardView.id }) else {
-            return false
-        }
-        return index == 0
-    }
+    @StateObject private var viewModel = ContentViewModel()
     
     // MARK: DRAG STATES
     enum DragState {
@@ -80,10 +49,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             // MARK: - HEADER
-            
             HeaderView(
-                showGuideView: $showGuide,
-                showInfoView: $showInfo
+                showGuideView: $viewModel.showGuide,
+                showInfoView: $viewModel.showInfo
             )
             .opacity(dragState.isDragging ? 0.0 : 1.0)
             .animation(.default)
@@ -92,23 +60,23 @@ struct ContentView: View {
             
             // MARK: - CARDS
             ZStack {
-                ForEach(cardViews) { cardView in
+                ForEach(viewModel.cardViews) { cardView in
                     cardView
-                        .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
+                        .zIndex(viewModel.isTopCard(cardView: cardView) ? 1 : 0)
                         .overlay(
                             ZStack {
                                 Image(systemName: "x.circle")
                                     .modifier(SymbolModifier())
-                                    .opacity(self.dragState.translation.width < -self.dragAreaThreshold && self.isTopCard(cardView: cardView) ? 1.0 : 0.0)
+                                    .opacity(self.dragState.translation.width < -viewModel.dragAreaThreshold && viewModel.isTopCard(cardView: cardView) ? 1.0 : 0.0)
                                 
                                 Image(systemName: "heart.circle")
                                     .modifier(SymbolModifier())
-                                    .opacity(self.dragState.translation.width > self.dragAreaThreshold && self.isTopCard(cardView: cardView) ? 1.0 : 0.0)
+                                    .opacity(self.dragState.translation.width > viewModel.dragAreaThreshold && viewModel.isTopCard(cardView: cardView) ? 1.0 : 0.0)
                             }
                         )
-                        .offset(x: self.isTopCard(cardView: cardView) ? self.dragState.translation.width : 0, y: self.isTopCard(cardView: cardView) ? self.dragState.translation.height : 0)
-                        .scaleEffect(self.dragState.isDragging && self.isTopCard(cardView: cardView) ? 0.85 : 1.0)
-                        .rotationEffect(Angle(degrees: self.isTopCard(cardView: cardView) ?  Double(self.dragState.translation.width / 12) : 0))
+                        .offset(x: viewModel.isTopCard(cardView: cardView) ? self.dragState.translation.width : 0, y: viewModel.isTopCard(cardView: cardView) ? self.dragState.translation.height : 0)
+                        .scaleEffect(self.dragState.isDragging && viewModel.isTopCard(cardView: cardView) ? 0.85 : 1.0)
+                        .rotationEffect(Angle(degrees: viewModel.isTopCard(cardView: cardView) ?  Double(self.dragState.translation.width / 12) : 0))
                         .animation(.interpolatingSpring(stiffness: 120, damping: 120))
                         .gesture(LongPressGesture(minimumDuration: 0.01)
                             .sequenced(before: DragGesture())
@@ -126,12 +94,12 @@ struct ContentView: View {
                                     return
                                 }
                                 
-                                if drag.translation.width < -self.dragAreaThreshold {
-                                    self.cardRemovalTransition = .leadingBottom
+                                if drag.translation.width < -viewModel.dragAreaThreshold {
+                                    viewModel.cardRemovalTransition = .leadingBottom
                                 }
                                 
-                                if drag.translation.width > self.dragAreaThreshold {
-                                    self.cardRemovalTransition = .trailingBottom
+                                if drag.translation.width > viewModel.dragAreaThreshold {
+                                    viewModel.cardRemovalTransition = .trailingBottom
                                 }
                                 
                             })
@@ -139,13 +107,12 @@ struct ContentView: View {
                                     guard case .second(true, let drag?) = value else {
                                         return
                                     }
-                                    if drag.translation.width < -self.dragAreaThreshold || drag.translation.width > self.dragAreaThreshold {
-                                        
+                                    if drag.translation.width < -viewModel.dragAreaThreshold || drag.translation.width > viewModel.dragAreaThreshold {
                                         playSound(sound: "sound-rise", type: "mp3")
-                                        self.moveCards()
+                                        viewModel.moveCards()
                                     }
                                 })
-                        ).transition(self.cardRemovalTransition)
+                        ).transition(viewModel.cardRemovalTransition)
                 }
             }
             .padding(.horizontal)
@@ -154,11 +121,11 @@ struct ContentView: View {
             Spacer()
             
             // MARK: - FOOTER
-            FooterView(showBookingAlert: $showAlert)
+            FooterView(showBookingAlert: $viewModel.showAlert)
                 .opacity(dragState.isDragging ? 0.0 : 1.0)
                 .animation(.default)
         }
-        .alert(isPresented: $showAlert) {
+        .alert(isPresented: $viewModel.showAlert) {
             Alert(
                 title: Text("SUCCESS"),
                 message: Text("Whishing a lovely and most precious of the times together for the amazing couple."),
