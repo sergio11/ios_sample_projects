@@ -26,14 +26,7 @@ struct InfoView: View {
                 Text("Credits")
                     .fontWeight(.black)
                     .modifier(TitleModifier())
-                
-                HStack {
-                    Text("Photos")
-                        .foregroundColor(Color.gray)
-                    Spacer()
-                    Text("Unsplash")
-                }
-                
+  
                 CreditsView()
                 
                 Spacer(minLength: 10)

@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardView: View, Identifiable {
     
+    // MARK: - PROPERTIES
     let id = UUID()
     var honeymoon: Destination
-    
-    
     
     var body: some View {
         Image(honeymoon.image)
