@@ -53,6 +53,14 @@ This project is structured to demonstrate how to:
 
 ## 📸 Screenshots
 
+<img width="260px" align="left" src="doc/screenshots/picture_1.png" />
+<img width="260px" align="left" src="doc/screenshots/picture_2.png" />
+<img width="260px" src="doc/screenshots/picture_3.png" />
+
+<img width="260px" align="left" src="doc/screenshots/picture_4.png" />
+<img width="260px" align="left" src="doc/screenshots/picture_5.png" />
+<img width="260px" src="doc/screenshots/picture_6.png" />
+
 ## 📚 Resources
 
 - Author: [Robert Petras](https://twitter.com/robertpetras)  
