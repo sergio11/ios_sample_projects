@@ -21,6 +21,9 @@
 		3D216F0B2D1EDCB600F8B012 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D216F0A2D1EDCB600F8B012 /* HeaderComponent.swift */; };
 		3D216F0D2D1EDD3200F8B012 /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D216F0C2D1EDD3200F8B012 /* GuideComponent.swift */; };
 		3D216F0F2D1EDF1000F8B012 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D216F0E2D1EDF1000F8B012 /* GuideView.swift */; };
+		3D980CC02D2150F1000B7336 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D980CBF2D2150F1000B7336 /* InfoView.swift */; };
+		3D980CC22D21516D000B7336 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D980CC12D21516D000B7336 /* TitleModifier.swift */; };
+		3D980CC52D21525D000B7336 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D980CC42D21525D000B7336 /* ButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		3D216F0A2D1EDCB600F8B012 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		3D216F0C2D1EDD3200F8B012 /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
 		3D216F0E2D1EDF1000F8B012 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		3D980CBF2D2150F1000B7336 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		3D980CC12D21516D000B7336 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		3D980CC42D21525D000B7336 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		3D216EE42D1EC84900F8B012 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				3D980CC32D215194000B7336 /* Modifier */,
 				3D216F092D1EDCAC00F8B012 /* Component */,
 				3D216F012D1ED73B00F8B012 /* View */,
 				3D216F002D1ED6D300F8B012 /* Data */,
@@ -116,6 +123,7 @@
 				3D216F042D1ED96200F8B012 /* HeaderView.swift */,
 				3D216F062D1EDB6D00F8B012 /* FooterView.swift */,
 				3D216F0E2D1EDF1000F8B012 /* GuideView.swift */,
+				3D980CBF2D2150F1000B7336 /* InfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +135,15 @@
 				3D216F0C2D1EDD3200F8B012 /* GuideComponent.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		3D980CC32D215194000B7336 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				3D980CC12D21516D000B7336 /* TitleModifier.swift */,
+				3D980CC42D21525D000B7336 /* ButtonModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D216EFF2D1ED6CC00F8B012 /* HoneymoonData.swift in Sources */,
+				3D980CC02D2150F1000B7336 /* InfoView.swift in Sources */,
 				3D216F072D1EDB6D00F8B012 /* FooterView.swift in Sources */,
+				3D980CC22D21516D000B7336 /* TitleModifier.swift in Sources */,
 				3D216F052D1ED96200F8B012 /* HeaderView.swift in Sources */,
 				3D216EFD2D1ED69000F8B012 /* HoneymoonModel.swift in Sources */,
+				3D980CC52D21525D000B7336 /* ButtonModifier.swift in Sources */,
 				3D216F0B2D1EDCB600F8B012 /* HeaderComponent.swift in Sources */,
 				3D216EE82D1EC84900F8B012 /* ContentView.swift in Sources */,
 				3D216EE62D1EC84900F8B012 /* HoneymoonApp.swift in Sources */,
