@@ -2,6 +2,13 @@
 
 Welcome to **SwiftUI Honeymoon**, an advanced iOS and iPadOS application that showcases the beauty and power of SwiftUI. This project is part of the [SwiftUI Masterclass](https://swiftuimasterclass.com) by [Robert Petras](https://robertpetras.com). 
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" />
+  <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apple%20laptop-333333?style=for-the-badge&logo=apple&logoColor=white" />
+</p>
+
 This project offers a comprehensive learning experience in SwiftUI, including:
 
 ### 🎯 Objectives:
