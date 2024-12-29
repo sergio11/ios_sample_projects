@@ -11,11 +11,14 @@ struct HeaderView: View {
     // MARK: - PROPERTIES
     @Binding var showGuideView: Bool
     @Binding var showInfoView: Bool
+    let haptics = UINotificationFeedbackGenerator()
     
     var body: some View {
         HStack {
             
             Button(action: {
+                self.haptics.notificationOccurred(.success)
+                playSound(sound: "sound-click", type: "mp3")
                 self.showInfoView.toggle()
             }) {
                 Image(systemName: "info.circle")
@@ -36,6 +39,8 @@ struct HeaderView: View {
             Spacer()
             
             Button(action: {
+                self.haptics.notificationOccurred(.success)
+                playSound(sound: "sound-click", type: "mp3")
                 self.showGuideView.toggle()
             }) {
                 Image(systemName: "questionmark.circle")
